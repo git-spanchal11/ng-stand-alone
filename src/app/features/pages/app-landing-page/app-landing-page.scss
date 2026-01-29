@@ -1,0 +1,22 @@
+.app-landing{
+    background-image: url("https://assets.codepen.io/9051928/gradient.png");
+  background-size: 100vw;
+  background-position: 0 0;
+  height: 400vh;
+  color: var(--white);
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: var(--p);
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 2rem;
+  gap: 2rem;
+
+}

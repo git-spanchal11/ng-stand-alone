@@ -1,6 +1,9 @@
-<header class="app-header">
-        <div class="menu">
-            <p>Welcome to my profile!</p>
-             <button (click)="goToHome()">Explore Profile</button>
-        </div>
-</header>
+<ion-header>
+        <ion-toolbar>
+                <ion-title>Welcome to my profile!</ion-title>
+                <ion-buttons slot="end">
+                        <ion-button (click)="goToHome()" shape="round" fill="outline" color="light">Explore
+                                Profile</ion-button>
+                </ion-buttons>
+        </ion-toolbar>
+</ion-header>

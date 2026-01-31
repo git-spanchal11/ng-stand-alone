@@ -1,16 +1,73 @@
+<ion-content class="hero-wrapper">
+  <main class="hero-layout">
 
-<app-header></app-header>
-<!-- <template> -->
-   <ion-content class="">
-    <ion-card class="welcome-card">
-      <ion-card-header>
-        <ion-card-title>Welcome to Our App!</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Discover amazing features and enjoy seamless experience.</p>
-      </ion-card-content>
-    </ion-card>
+    <!-- LEFT CONTENT -->
+    <section class="hero-left">
+      <header>
+        <h1>
+          Hi, I’m <span class="gradient-text">Sagar Panchal</span><br />
+          <strong>Technical Lead – Angular & Ionic</strong>
+        </h1>
+      </header>
+
+      <p class="hero-description">
+        Frontend Technical Lead with <strong>9+ years</strong> of experience building
+        scalable, high-performance <strong>Web & Hybrid Mobile Applications</strong>.
+        Specialized in enterprise-grade Angular & Ionic solutions.
+      </p>
+
+      <ul class="skill-list">
+        <li>Angular / AngularJS</li>
+        <li>Ionic Framework</li>
+        <li>Capacitor & Cordova</li>
+        <li>TypeScript & JavaScript</li>
+        <li>HTML5, CSS3, SCSS</li>
+        <li>Frontend Architecture</li>
+      </ul>
+
+      <div class="cta-actions">
+        <a (click)="goToHome()" class="btn primary">View Portfolio</a> &nbsp;
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- RIGHT CARD -->
+    <aside class="hero-right">
+      <article class="profile-card">
+        <div class="avatar">
+          <span>⚡</span>
+        </div>
+
+        <h2>Sagar Panchal</h2>
+        <h3>Frontend Technical Lead</h3>
+
+        <p>
+          I enjoy transforming complex requirements into clean,
+      maintainable Angular & Ionic solutions with a strong
+      focus on performance and usability.
+        </p>
+
+        <div class="card-actions">
+          <a href="mailto:panchalsagar21@gmail.com" class="btn small primary">Hire Me</a>
+          <a href="https://www.linkedin.com/in/spanchal11/" class="btn small ghost">LinkedIn</a>
+        </div>
+      </article>
+    </aside>
+
+    <!-- Decorative Background -->
+    <div class="bubble-bg" aria-hidden="true">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+  </main>
 </ion-content>
-<!-- </template> -->
- 
-<app-footer></app-footer>

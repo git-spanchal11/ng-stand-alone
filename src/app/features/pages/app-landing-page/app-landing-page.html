@@ -4,25 +4,16 @@
     <!-- LEFT CONTENT -->
     <section class="hero-left">
       <header>
-        <h1>
-          Hi, I’m <span class="gradient-text">Sagar Panchal</span><br />
-          <strong>Technical Lead – Angular & Ionic</strong>
-        </h1>
+        <h1> {{data.header.title}} <strong class='gradient-text'>{{data.name}}</strong> <br/>
+          {{data.header.subtitle}} </h1>
       </header>
 
-      <p class="hero-description">
-        Frontend Technical Lead with <strong>9+ years</strong> of experience building
-        scalable, high-performance <strong>Web & Hybrid Mobile Applications</strong>.
-        Specialized in enterprise-grade Angular & Ionic solutions.
-      </p>
+      <p class="hero-description" [innerHTML]="data.header.description"></p>
 
       <ul class="skill-list">
-        <li>Angular / AngularJS</li>
-        <li>Ionic Framework</li>
-        <li>Capacitor & Cordova</li>
-        <li>TypeScript & JavaScript</li>
-        <li>HTML5, CSS3, SCSS</li>
-        <li>Frontend Architecture</li>
+        @for(skill of data.header.skills; track skill.name){
+        <li>{{skill}}</li>
+        }
       </ul>
 
       <div class="cta-actions">

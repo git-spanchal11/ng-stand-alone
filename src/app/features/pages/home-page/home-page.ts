@@ -1,15 +1,13 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { IonList, IonItem, IonContent, IonAvatar, IonLabel } from "@ionic/angular/standalone";
 import { HttpService } from '../../../app-core/http/http.service';
-import { AppHeader } from "../../components/app-header/app-header";
-import { AppFooter } from "../../components/app-footer/app-footer";
-import { Observable } from 'rxjs';
 import { ScrollingModule } from '@angular/cdk/scrolling';
-// import { NgForOf } from "../../../../../node_modules/@angular/common/types/_common_module-chunk";
+import { AppFooter } from "../../components/app-footer/app-footer";
+import { AppHeader } from "../../components/app-header/app-header";
+import { AppContent } from "../../components/app-content/app-content";
 
 @Component({
   selector: 'app-home-page',
-  imports: [IonItem, IonList, IonContent, IonAvatar, IonLabel, AppHeader, AppFooter, ScrollingModule],
+  imports: [ScrollingModule, AppFooter, AppHeader],
   templateUrl: './home-page.html',
   styleUrl: './home-page.scss',
   standalone: true,

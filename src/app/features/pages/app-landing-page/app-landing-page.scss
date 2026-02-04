@@ -1,3 +1,16 @@
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+}
+
+.page-content {
+  flex: 1; /* This makes the content grow to fill space */
+  overflow-y: auto; /* Enables scrolling for content only */
+}
+
+
 /* ===== ROOT ===== */
 .hero-wrapper {
   --primary: #6366f1;
@@ -5,24 +18,24 @@
   --accent: #a855f7;
   --bg-dark: #0f172a;
   --glass: rgba(255, 255, 255, 0.12);
+
 }
 
 /* ===== LAYOUT ===== */
 .hero-layout {
   position: relative;
-  min-height: 100vh;
   padding: 3rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  background: radial-gradient(circle at top, #1e293b, #020617);
   overflow: hidden;
+  background: radial-gradient(circle at top, #1e293b, #020617);
 }
 
 /* ===== LEFT ===== */
 .hero-left {
   z-index: 2;
-  max-width: 640px;
+//   max-width: 640px;
   color: #e5e7eb;
 }
 
@@ -280,19 +293,21 @@
   to { transform: translateY(-120vh); opacity: 0; }
 }
 
-/* ===== TABLET ===== */
-@media (min-width: 768px) {
-  .hero-layout {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4rem;
-  }
-}
+// /* ===== TABLET ===== */
+// @media (min-width: 768px) {
+//   .hero-layout {
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 4rem;
+//   }
+// }
 
-/* ===== DESKTOP ===== */
-@media (min-width: 1200px) {
-  .hero-layout {
-    padding: 6rem 8rem;
-  }
-}
+// /* ===== DESKTOP ===== */
+// @media (min-width: 1200px) {
+//   .hero-layout {
+//     padding: 6rem 8rem;
+//   }
+// }
+
+

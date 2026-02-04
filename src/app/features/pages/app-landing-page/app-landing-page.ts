@@ -1,12 +1,11 @@
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
-import { IonContent} from "@ionic/angular/standalone";
 import { Router } from '@angular/router';
 import { LoadDataService } from '../../../app-shared/load-data-service';
 
 @Component({
   standalone: true,
   selector: 'app-landing-page',
-  imports: [IonContent],
+  imports: [],
   templateUrl: './app-landing-page.html',
   styleUrl: './app-landing-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

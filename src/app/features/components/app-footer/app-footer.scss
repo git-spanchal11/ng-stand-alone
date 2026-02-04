@@ -13,3 +13,18 @@ ion-toolbar {
   --background: transparent;
   color: #fff;
 }
+
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.page-footer {
+  background: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  width: 100%;
+  bottom: 0;
+}
+

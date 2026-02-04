@@ -1,8 +1,33 @@
-<content class="app-content">
-    <section>
-        <article>
-        <h1>Digital Profile</h1>
-        <p>Welcome to my digital profile!</p>
-        </article>
-    </section>
-</content>
+
+<!-- <div class="">
+    @for (country of countries; track $index) {
+        <div>
+            <p>
+                {{ country?.name }}
+            </p>
+        </div>
+        }
+</div> -->
+<app-header title="Country List"></app-header>
+<ion-content>
+    @if (countries.length === 0 ) {
+    <ion-item>
+        <ion-label>No countries available.</ion-label>
+    </ion-item>
+    } @else if (countries.length > 0) {
+    <cdk-virtual-scroll-viewport itemSize="60" class="viewport">
+        <ion-list>
+            <ion-item *cdkVirtualFor="let country of countries">
+                <ion-avatar slot="start">
+                    <img [src]="country?.media?.flag" alt="{{country?.name}}Flag" />
+                </ion-avatar>
+                <ion-label> {{ country?.name }} </ion-label>
+            </ion-item>
+        </ion-list>
+    </cdk-virtual-scroll-viewport>
+    <ion-list>
+    </ion-list>
+    }
+
+    </ion-content>
+    <app-footer></app-footer>

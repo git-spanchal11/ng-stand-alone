@@ -1,66 +1,63 @@
 <div class="page-layout">
 
-  <main class="page-content">
-    <div class="hero-wrapper">
-      <div class="hero-layout">
+  <main class="page-content page-wrapper">
+    <!-- <div class="hero-layout"> -->
+      <div class="row vh-100 align-items-center" >
+          <div class="hero-left col-12 col-md-6">
+            <header>
+              <h1> {{data.header.title}} <strong class='gradient-text'>{{data.name}}</strong> <br />
+                {{data.header.subtitle}} </h1>
+            </header>
 
-        <section class="hero-left">
-          <header>
-            <h1> {{data.header.title}} <strong class='gradient-text'>{{data.name}}</strong> <br />
-              {{data.header.subtitle}} </h1>
-          </header>
+            <p class="hero-description" [innerHTML]="data.header.description"></p>
 
-          <p class="hero-description" [innerHTML]="data.header.description"></p>
+            <ul class="skill-list">
+              @for(skill of data.header.skills; track skill.name){
+              <li>{{skill}}</li>
+              }
+            </ul>
 
-          <ul class="skill-list">
-            @for(skill of data.header.skills; track skill.name){
-            <li>{{skill}}</li>
-            }
-          </ul>
-
-          <div class="cta-actions">
-            <a (click)="goToHome()" class="btn primary">View Portfolio</a> &nbsp;
-            <a href="#contact" class="btn secondary">Contact Me</a>
+            <div class="cta-actions">
+              <a (click)="goToHome()" class="btn primary">View Portfolio</a> &nbsp;
+              <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
           </div>
-        </section>
+          <div class="hero-right col-12 col-md-6">
+            <article class="profile-card">
+              <div class="avatar">
+                <span>⚡</span>
+              </div>
 
-        <aside class="hero-right">
-          <article class="profile-card">
-            <div class="avatar">
-              <span>⚡</span>
-            </div>
+              <h2>Sagar Panchal</h2>
+              <h3>Frontend Technical Lead</h3>
 
-            <h2>Sagar Panchal</h2>
-            <h3>Frontend Technical Lead</h3>
+              <p>
+                I enjoy transforming complex requirements into clean,
+                maintainable Angular & Ionic solutions with a strong
+                focus on performance and usability.
+              </p>
 
-            <p>
-              I enjoy transforming complex requirements into clean,
-              maintainable Angular & Ionic solutions with a strong
-              focus on performance and usability.
-            </p>
-
-            <div class="card-actions">
-              <a href="mailto:panchalsagar21@gmail.com" class="btn small primary">Hire Me</a>
-              <a href="https://www.linkedin.com/in/spanchal11/" class="btn small ghost">LinkedIn</a>
-            </div>
-          </article>
-        </aside>
-
-        <div class="bubble-bg" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
+              <div class="card-actions">
+                <a href="mailto:panchalsagar21@gmail.com" class="btn small primary">Hire Me</a>
+                <a href="https://www.linkedin.com/in/spanchal11/" class="btn small ghost">LinkedIn</a>
+              </div>
+            </article>
+          </div>
       </div>
+    <!-- </div> -->
+
+    <div class="bubble-bg" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </main>
 
